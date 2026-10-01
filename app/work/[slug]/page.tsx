@@ -39,78 +39,78 @@ function LogoMarkSmall() {
 // ─── Hero Laptop Mockup Component With Direct Live Link Button ──
 function HeroLaptop({ project }: { project: ProjectItem }) {
   return (
-    <div className="w-full rounded-2xl sm:rounded-3xl bg-[#EEF2F6] border border-neutral-200/90 p-4 sm:p-10 lg:p-12 shadow-sm flex items-center justify-center overflow-hidden">
+    <div className="w-full rounded-2xl sm:rounded-3xl bg-[#EEF2F6] border border-neutral-200/90 p-2 sm:p-10 lg:p-12 shadow-sm flex items-center justify-center overflow-hidden">
       {/* Laptop Outer Bezel */}
-      <div className="w-full max-w-[1080px] bg-neutral-950 rounded-t-2xl p-2.5 sm:p-4 shadow-2xl border border-neutral-800">
+      <div className="w-full max-w-[1080px] bg-neutral-950 rounded-t-xl sm:rounded-t-2xl p-1.5 sm:p-4 shadow-2xl border border-neutral-800">
         {/* Screen Bezel Header Bar */}
-        <div className="flex items-center justify-between px-2 pb-2.5">
+        <div className="flex items-center justify-between px-1.5 sm:px-2 pb-1.5 sm:pb-2.5">
           <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
-            <div className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
-            <div className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
+            <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-red-400/80" />
+            <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-amber-400/80" />
+            <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-emerald-400/80" />
           </div>
-          <div className="text-[11px] font-mono text-neutral-400 tracking-wider truncate max-w-[300px]">
+          <div className="text-[10px] sm:text-[11px] font-mono text-neutral-400 tracking-wider truncate max-w-[200px] sm:max-w-[300px]">
             {project.liveUrl?.replace("https://", "") || "production-app.vercel.app"}
           </div>
-          <div className="flex items-center gap-1.5 text-[10px] text-emerald-400 font-mono">
+          <div className="flex items-center gap-1.5 text-[9px] sm:text-[10px] text-emerald-400 font-mono">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
             <span>Online</span>
           </div>
         </div>
 
         {/* Screen Display Area */}
-        <div className="w-full bg-white rounded-lg p-6 sm:p-10 min-h-[380px] sm:min-h-[460px] flex flex-col justify-between select-none relative overflow-hidden">
+        <div className="w-full bg-white rounded-md sm:rounded-lg p-3 sm:p-10 min-h-0 sm:min-h-[460px] flex flex-col justify-between select-none relative overflow-hidden">
           {/* Subtle Ambient Background Tint */}
           <div
-            className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full blur-3xl opacity-20 pointer-events-none"
+            className="absolute top-0 right-0 w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] rounded-full blur-3xl opacity-20 pointer-events-none"
             style={{ background: project.color }}
           />
 
           {/* Top Bar of Screen */}
-          <div className="flex items-center justify-between pb-4 border-b border-neutral-100 relative z-10">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between pb-2 sm:pb-4 border-b border-neutral-100 relative z-10">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <span
-                className="w-3 h-3 rounded-full"
+                className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full shrink-0"
                 style={{ background: project.color }}
               />
-              <span className="text-[12px] font-bold text-neutral-800 tracking-tight">
+              <span className="text-[10.5px] sm:text-[12px] font-bold text-neutral-800 tracking-tight truncate max-w-[200px] sm:max-w-none">
                 {project.company} · Live Production Application
               </span>
             </div>
-            <span className="px-2.5 py-0.5 rounded-full bg-neutral-100 text-neutral-600 text-[11px] font-mono border border-neutral-200">
+            <span className="px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-600 text-[9.5px] sm:text-[11px] font-mono border border-neutral-200 shrink-0">
               Next.js 15
             </span>
           </div>
 
-          {/* Central Call to Action (As requested: Live Link Button in Center of Laptop) */}
-          <div className="my-auto py-8 text-center max-w-[620px] mx-auto relative z-10 flex flex-col items-center">
-            <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[11.5px] font-semibold border border-blue-200 mb-4 inline-flex items-center gap-1.5">
-              <Zap size={13} className="text-blue-600" />
+          {/* Central Call to Action (Compact on mobile) */}
+          <div className="my-auto py-2.5 sm:py-8 text-center max-w-[620px] mx-auto relative z-10 flex flex-col items-center">
+            <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-blue-50 text-blue-700 text-[10px] sm:text-[11.5px] font-semibold border border-blue-200 mb-1.5 sm:mb-4 inline-flex items-center gap-1.5">
+              <Zap size={12} className="text-blue-600" />
               <span>Full-Stack Web Application</span>
             </span>
 
-            <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-neutral-900 leading-tight">
+            <h2 className="text-[18px] sm:text-4xl font-extrabold tracking-tight text-neutral-900 leading-tight">
               {project.title}
             </h2>
 
-            <p className="mt-2.5 text-[14px] text-neutral-600 leading-relaxed max-w-[460px]">
+            <p className="mt-1 sm:mt-2.5 text-[11.5px] sm:text-[14px] text-neutral-600 leading-snug sm:leading-relaxed max-w-[460px] line-clamp-2 sm:line-clamp-none">
               {project.blurb}
             </p>
 
             {/* ─── PROMINENT LIVE LINK BUTTON ─── */}
             {project.liveUrl && (
-              <div className="mt-7 flex flex-col items-center gap-2.5">
+              <div className="mt-2.5 sm:mt-7 flex flex-col items-center gap-1 sm:gap-2.5">
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-[0.98] text-white font-bold text-[14.5px] shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-150 cursor-pointer group"
+                  className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-7 py-2 sm:py-3.5 rounded-lg sm:rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-[0.98] text-white font-bold text-[12.5px] sm:text-[14.5px] shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-150 cursor-pointer group"
                   title="Open live website in new tab"
                 >
                   <span>Visit Live Site</span>
-                  <ExternalLink size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ExternalLink size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
-                <span className="text-[11.5px] font-mono text-neutral-400">
+                <span className="text-[10px] sm:text-[11.5px] font-mono text-neutral-400 hidden sm:inline">
                   {project.liveUrl}
                 </span>
               </div>
@@ -118,18 +118,18 @@ function HeroLaptop({ project }: { project: ProjectItem }) {
           </div>
 
           {/* Bottom Highlights Bar of Laptop Display */}
-          <div className="grid grid-cols-3 gap-3 pt-5 border-t border-neutral-100 text-left relative z-10">
-            <div className="p-3 rounded-lg bg-neutral-50/80 border border-neutral-100">
-              <p className="text-[10px] font-medium text-neutral-400 uppercase tracking-wider">Speed Score</p>
-              <p className="text-[14px] font-extrabold text-neutral-800">99 / 100 Mobile</p>
+          <div className="grid grid-cols-3 gap-1.5 sm:gap-3 pt-2 sm:pt-5 border-t border-neutral-100 text-left relative z-10">
+            <div className="p-1.5 sm:p-3 rounded-md sm:rounded-lg bg-neutral-50/80 border border-neutral-100">
+              <p className="text-[8.5px] sm:text-[10px] font-medium text-neutral-400 uppercase tracking-wider truncate">Speed Score</p>
+              <p className="text-[11px] sm:text-[14px] font-extrabold text-neutral-800 truncate">99 / 100 Mobile</p>
             </div>
-            <div className="p-3 rounded-lg bg-neutral-50/80 border border-neutral-100">
-              <p className="text-[10px] font-medium text-neutral-400 uppercase tracking-wider">Architecture</p>
-              <p className="text-[14px] font-extrabold text-neutral-800">App Router &amp; RSC</p>
+            <div className="p-1.5 sm:p-3 rounded-md sm:rounded-lg bg-neutral-50/80 border border-neutral-100">
+              <p className="text-[8.5px] sm:text-[10px] font-medium text-neutral-400 uppercase tracking-wider truncate">Architecture</p>
+              <p className="text-[11px] sm:text-[14px] font-extrabold text-neutral-800 truncate">App Router &amp; RSC</p>
             </div>
-            <div className="p-3 rounded-lg bg-neutral-50/80 border border-neutral-100">
-              <p className="text-[10px] font-medium text-neutral-400 uppercase tracking-wider">Deployment</p>
-              <p className="text-[14px] font-extrabold text-neutral-800">Vercel Edge Global</p>
+            <div className="p-1.5 sm:p-3 rounded-md sm:rounded-lg bg-neutral-50/80 border border-neutral-100">
+              <p className="text-[8.5px] sm:text-[10px] font-medium text-neutral-400 uppercase tracking-wider truncate">Deployment</p>
+              <p className="text-[11px] sm:text-[14px] font-extrabold text-neutral-800 truncate">Vercel Edge Global</p>
             </div>
           </div>
         </div>

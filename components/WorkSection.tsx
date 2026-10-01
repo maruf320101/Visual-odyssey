@@ -139,10 +139,8 @@ function WorkTile({
         <div
           className={`relative overflow-hidden ${
             isLg ? "rounded-2xl" : "rounded-xl"
-          } flex flex-col items-center justify-center gap-3 ${
-            isLg
-              ? "aspect-[2.2/1] sm:aspect-[16/10] sm:min-h-[350px] md:min-h-[380px]"
-              : "aspect-[16/10] sm:min-h-[160px] md:min-h-[195px]"
+          } flex flex-col items-center justify-center gap-3 aspect-[16/10] ${
+            isLg ? "sm:min-h-[350px] md:min-h-[380px]" : "sm:min-h-[160px] md:min-h-[195px]"
           }`}
           style={{
             background: "linear-gradient(135deg, color-mix(in srgb, #3b82f6 8%, var(--card-bg)), color-mix(in srgb, #06b6d4 4%, var(--card-bg)))",
@@ -176,10 +174,8 @@ function WorkTile({
         <div
           className={`relative overflow-hidden ${
             isLg ? "rounded-2xl" : "rounded-xl"
-          } border border-neutral-200/90 dark:border-neutral-800 transition-shadow duration-300 group-hover:shadow-xl ${
-            isLg
-              ? "aspect-[2.2/1] sm:aspect-[16/10] sm:min-h-[350px] md:min-h-[380px]"
-              : "aspect-[16/10] sm:min-h-[160px] md:min-h-[195px]"
+          } border border-neutral-200/90 dark:border-neutral-800 transition-shadow duration-300 group-hover:shadow-xl aspect-[16/10] ${
+            isLg ? "sm:min-h-[350px] md:min-h-[380px]" : "sm:min-h-[160px] md:min-h-[195px]"
           }`}
           style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.06)" }}
         >
