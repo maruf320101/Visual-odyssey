@@ -239,7 +239,7 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-0 sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
+      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-[25px] sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
     >
       {/* Header */}
       <div className="mb-6 sm:mb-14 text-left">
