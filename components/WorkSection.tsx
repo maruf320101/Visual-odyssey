@@ -239,12 +239,12 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-[24px] sm:pt-[50px] pb-20 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
+      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
     >
       {/* Header */}
-      <div className="mb-10 sm:mb-14">
+      <div className="mb-6 sm:mb-14">
         <h1
-          className="text-[2.2rem] sm:text-[3.2rem] md:text-[3.6rem] font-bold tracking-tight"
+          className="text-[2rem] sm:text-[3.2rem] md:text-[3.6rem] font-bold tracking-tight"
           style={{ color: "var(--fg)" }}
         >
           Selected work
@@ -252,21 +252,21 @@ export default function WorkSection() {
       </div>
 
       {/* Featured — 6 cards in 2 columns (3 rows) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 lg:gap-14">
         {PROJECTS.map((item) => (
           <WorkTile key={item.id} {...item} size="lg" />
         ))}
       </div>
 
       {/* Archive */}
-      <div className="mt-16 sm:mt-24">
+      <div className="mt-12 sm:mt-24">
         <h3
-          className="text-[13px] font-bold tracking-[0.14em] uppercase mb-6 sm:mb-8"
+          className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase mb-4 sm:mb-8"
           style={{ color: "var(--fg-muted)" }}
         >
           Archive
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3.5 sm:gap-x-6 gap-y-7 sm:gap-y-12">
           {WORK_ARCHIVE.map((item) => (
             <WorkTile key={item.slug} {...item} size="sm" />
           ))}

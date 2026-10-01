@@ -14,10 +14,10 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full mx-auto px-4 sm:px-6 py-10 sm:py-14" style={{ maxWidth: "var(--content-width, 1450px)" }}>
+    <footer className="w-full mx-auto px-4 sm:px-6 py-8 sm:py-14" style={{ maxWidth: "var(--content-width, 1450px)" }}>
       <div
         className="flex flex-wrap items-center gap-2 sm:gap-3 text-[12px]"
-        style={{ borderTop: "1px solid var(--border)", paddingTop: "2rem" }}
+        style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}
       >
         {/* Logo mark */}
         <svg width="16" height="14" viewBox="0 0 26 22" fill="none" aria-hidden="true">

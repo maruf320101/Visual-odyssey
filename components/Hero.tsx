@@ -178,7 +178,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
           {/* LEFT — Text */}
-          <div className="flex flex-col items-start text-left order-1 max-w-[540px]">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left order-1 max-w-[540px]">
 
             {/* H1 */}
             <motion.h1
@@ -194,7 +194,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <motion.p
-              className="text-[14.5px] sm:text-[18px] md:text-[19px] font-normal leading-relaxed mb-6 sm:mb-10 max-w-[500px]"
+              className="text-[14.5px] sm:text-[18px] md:text-[19px] font-normal leading-relaxed mb-6 sm:mb-10 max-w-[500px] mx-auto lg:mx-0"
               style={{ color: "var(--fg-muted)" }}
               {...fadeUp(0.32)}
             >
@@ -205,7 +205,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Buttons */}
-            <motion.div className="flex items-center gap-2.5 sm:gap-3 flex-wrap mb-6 sm:mb-12" {...fadeUp(0.44)}>
+            <motion.div className="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 flex-wrap mb-6 sm:mb-12" {...fadeUp(0.44)}>
               <Link
                 href="/work"
                 className="inline-flex items-center gap-1.5 sm:gap-2 px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full text-[14px] sm:text-[16px] font-semibold text-white transition-all duration-200 hover:opacity-90 hover:scale-[1.03] active:scale-[0.97]"

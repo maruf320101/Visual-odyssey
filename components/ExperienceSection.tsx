@@ -146,12 +146,12 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="w-full mx-auto px-4 sm:px-6 py-20 sm:py-28 scroll-mt-[95px]"
+      className="w-full mx-auto px-4 sm:px-6 py-12 sm:py-28 scroll-mt-[95px]"
       style={{ maxWidth: "var(--content-width, 1450px)" }}
     >
       {/* Section Header */}
-      <div className="mb-14 sm:mb-18">
-        <p className="text-[12px] font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--fg-muted)" }}>
+      <div className="mb-8 sm:mb-18">
+        <p className="text-[12px] font-semibold tracking-[0.14em] uppercase mb-2 sm:mb-3" style={{ color: "var(--fg-muted)" }}>
           Experience
         </p>
         <h2 className="text-[2rem] sm:text-[2.5rem] font-bold tracking-tight" style={{ color: "var(--fg)" }}>
@@ -166,14 +166,14 @@ export default function ExperienceSection() {
           return (
             <motion.div
               key={idx}
-              className="flex items-stretch gap-4 sm:gap-7"
+              className="flex items-stretch gap-3.5 sm:gap-7"
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, ease: EASE, delay: idx * 0.08 }}
             >
               {/* Left Column: Avatar + Connecting Vertical Line */}
-              <div className="w-[50px] sm:w-[56px] shrink-0 flex flex-col items-center">
+              <div className="w-[46px] sm:w-[56px] shrink-0 flex flex-col items-center">
                 <ExperienceAvatar type={job.logoType || job.logos?.[0] || "leadership"} />
                 {!isLast && (
                   <div
@@ -184,19 +184,19 @@ export default function ExperienceSection() {
               </div>
 
               {/* Right Column: Title, Year, and Bulleted Points */}
-              <div className={`flex-1 min-w-0 max-w-[720px] ${isLast ? "pb-0" : "pb-14 sm:pb-20"}`}>
+              <div className={`flex-1 min-w-0 max-w-[720px] ${isLast ? "pb-0" : "pb-8 sm:pb-20"}`}>
                 {/* Role & Company Header */}
-                <h3 className="text-[22px] sm:text-[26px] font-bold tracking-tight leading-snug" style={{ color: "var(--fg)" }}>
+                <h3 className="text-[18px] sm:text-[26px] font-bold tracking-tight leading-snug" style={{ color: "var(--fg)" }}>
                   {job.role} <span className="font-normal text-[var(--fg-muted)]">·</span> {job.company}
                 </h3>
 
                 {/* Year / Period */}
-                <p className="text-[14px] sm:text-[15px] font-normal mt-1 mb-4 sm:mb-5 tracking-wide" style={{ color: "var(--fg-muted)" }}>
+                <p className="text-[13px] sm:text-[15px] font-normal mt-0.5 mb-3 sm:mb-5 tracking-wide" style={{ color: "var(--fg-muted)" }}>
                   {job.period}
                 </p>
 
                 {/* Bullet Points with constrained reading width (max-w-[680px]) and clean normal font-weight */}
-                <ul className="list-disc list-outside ml-4 sm:ml-5 space-y-3 sm:space-y-3.5 text-[15px] sm:text-[16px] leading-[1.65] font-normal max-w-[680px]" style={{ color: "var(--fg-muted)" }}>
+                <ul className="list-disc list-outside ml-4 sm:ml-5 space-y-2 sm:space-y-3.5 text-[14px] sm:text-[16px] leading-[1.6] sm:leading-[1.65] font-normal max-w-[680px]" style={{ color: "var(--fg-muted)" }}>
                   {job.bullets.map((bullet, bi) => (
                     <li key={bi} className="pl-1">
                       {bullet}

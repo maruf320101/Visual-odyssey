@@ -277,12 +277,12 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="w-full mx-auto px-4 sm:px-6 py-20 sm:py-28 scroll-mt-[95px]"
+      className="w-full mx-auto px-4 sm:px-6 py-12 sm:py-28 scroll-mt-[95px]"
       style={{ maxWidth: "var(--content-width, 1450px)" }}
     >
       {/* Header */}
-      <div className="mb-14 sm:mb-18">
-        <p className="text-[12px] font-semibold tracking-[0.14em] uppercase mb-3" style={{ color: "var(--fg-muted)" }}>
+      <div className="mb-8 sm:mb-18">
+        <p className="text-[12px] font-semibold tracking-[0.14em] uppercase mb-2 sm:mb-3" style={{ color: "var(--fg-muted)" }}>
           /{ABOUT.eyebrow.toLowerCase()}
         </p>
         <h2 className="text-[2rem] sm:text-[2.5rem] font-bold tracking-tight" style={{ color: "var(--fg)" }}>
@@ -291,11 +291,11 @@ export default function AboutSection() {
       </div>
 
       {/* Life Facets */}
-      <div className="flex flex-col gap-16 sm:gap-24">
+      <div className="flex flex-col gap-10 sm:gap-24">
         {ABOUT.facets.map((facet, i) => (
           <motion.div
             key={facet.title}
-            className="grid lg:grid-cols-[1fr_1.3fr] gap-8 sm:gap-14 items-center"
+            className="grid lg:grid-cols-[1fr_1.3fr] gap-5 sm:gap-14 items-center"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
