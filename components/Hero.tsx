@@ -170,11 +170,11 @@ function ScrollIndicator() {
 export default function Hero() {
   return (
     <section
-      className="min-h-screen min-h-[100svh] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 pt-[75px] sm:pt-[150px] pb-8 sm:pb-16 relative overflow-hidden"
+      className="min-h-screen min-h-[100svh] flex flex-col justify-start sm:justify-between items-center px-4 sm:px-6 lg:px-8 pt-[58px] sm:pt-[150px] pb-8 sm:pb-16 relative overflow-hidden"
       aria-labelledby="hero-heading"
     >
       {/* ── Main grid ── */}
-      <div className="w-full mx-auto max-w-[1260px] my-auto py-2 sm:py-0">
+      <div className="w-full mx-auto max-w-[1260px] mt-3 mb-6 sm:my-auto py-1 sm:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
           {/* LEFT — Text */}
