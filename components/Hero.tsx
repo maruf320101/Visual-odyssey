@@ -33,7 +33,7 @@ function LaptopMockup() {
 
   return (
     <div
-      className="relative w-full max-w-[540px] mx-auto cursor-pointer"
+      className="relative w-full max-w-[330px] sm:max-w-[540px] mx-auto cursor-pointer select-none"
       style={{ perspective: 1200 }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -170,24 +170,20 @@ function ScrollIndicator() {
 export default function Hero() {
   return (
     <section
-      className="min-h-screen min-h-[100svh] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 pt-[120px] sm:pt-[150px] pb-12 sm:pb-16 relative overflow-hidden"
+      className="min-h-screen min-h-[100svh] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 pt-[75px] sm:pt-[150px] pb-8 sm:pb-16 relative overflow-hidden"
       aria-labelledby="hero-heading"
-
     >
-
       {/* ── Main grid ── */}
-      <div className="w-full mx-auto max-w-[1260px] my-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div className="w-full mx-auto max-w-[1260px] my-auto py-2 sm:py-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
           {/* LEFT — Text */}
           <div className="flex flex-col items-start text-left order-1 max-w-[540px]">
 
-
-
             {/* H1 */}
             <motion.h1
               id="hero-heading"
-              className="text-[2.4rem] sm:text-[3.2rem] md:text-[3.8rem] lg:text-[4rem] font-bold leading-[1.08] tracking-[-0.04em] mb-6"
+              className="text-[1.85rem] sm:text-[3.2rem] md:text-[3.8rem] lg:text-[4rem] font-bold leading-[1.12] tracking-[-0.03em] mb-4 sm:mb-6"
               style={{ color: "var(--fg)" }}
               {...fadeUp(0.2)}
             >
@@ -198,7 +194,7 @@ export default function Hero() {
 
             {/* Subtitle */}
             <motion.p
-              className="text-[16px] sm:text-[18px] md:text-[19px] font-normal leading-relaxed mb-8 sm:mb-10 max-w-[500px]"
+              className="text-[14.5px] sm:text-[18px] md:text-[19px] font-normal leading-relaxed mb-6 sm:mb-10 max-w-[500px]"
               style={{ color: "var(--fg-muted)" }}
               {...fadeUp(0.32)}
             >
@@ -209,32 +205,31 @@ export default function Hero() {
             </motion.p>
 
             {/* Buttons */}
-            <motion.div className="flex items-center gap-3 flex-wrap mb-10 sm:mb-12" {...fadeUp(0.44)}>
+            <motion.div className="flex items-center gap-2.5 sm:gap-3 flex-wrap mb-6 sm:mb-12" {...fadeUp(0.44)}>
               <Link
                 href="/work"
-                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[15px] sm:text-[16px] font-semibold text-white transition-all duration-200 hover:opacity-90 hover:scale-[1.03] active:scale-[0.97]"
+                className="inline-flex items-center gap-1.5 sm:gap-2 px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full text-[14px] sm:text-[16px] font-semibold text-white transition-all duration-200 hover:opacity-90 hover:scale-[1.03] active:scale-[0.97]"
                 style={{
                   background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
                   boxShadow: "0 4px 24px rgba(59,130,246,0.45)",
                 }}
               >
                 View My Work
-                <ArrowUpRight size={18} strokeWidth={2.2} />
+                <ArrowUpRight size={17} strokeWidth={2.2} />
               </Link>
               <a
                 href="mailto:anisurrahaman320101@gmail.com"
-                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[15px] sm:text-[16px] font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
+                className="inline-flex items-center gap-1.5 sm:gap-2 px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full text-[14px] sm:text-[16px] font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
                 style={{
                   background: "var(--card-bg)",
                   border: "1px solid var(--border)",
                   color: "var(--fg)",
                 }}
               >
-                <Mail size={17} strokeWidth={2} />
+                <Mail size={16} strokeWidth={2} />
                 Contact Me
               </a>
             </motion.div>
-
 
           </div>
 
