@@ -152,7 +152,7 @@ function ScrollIndicator() {
       type="button"
       onClick={() => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })}
       aria-label="Scroll to selected work"
-      className="group cursor-pointer flex flex-col items-center gap-1.5 p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 mb-6 sm:mb-10"
+      className="hidden sm:flex group cursor-pointer flex-col items-center gap-1.5 p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 mb-6 sm:mb-10"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.3, duration: 0.6 }}
@@ -170,11 +170,11 @@ function ScrollIndicator() {
 export default function Hero() {
   return (
     <section
-      className="min-h-screen min-h-[100svh] flex flex-col justify-start sm:justify-between items-center px-4 sm:px-6 lg:px-8 pt-[58px] sm:pt-[150px] pb-8 sm:pb-16 relative overflow-hidden"
+      className="min-h-0 sm:min-h-screen sm:min-h-[100svh] flex flex-col justify-start sm:justify-between items-center px-4 sm:px-6 lg:px-8 pt-[68px] sm:pt-[150px] pb-4 sm:pb-16 relative overflow-hidden"
       aria-labelledby="hero-heading"
     >
       {/* ── Main grid ── */}
-      <div className="w-full mx-auto max-w-[1260px] mt-3 mb-6 sm:my-auto py-1 sm:py-0">
+      <div className="w-full mx-auto max-w-[1260px] mt-2 mb-2 sm:my-auto py-1 sm:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
           {/* LEFT — Text */}

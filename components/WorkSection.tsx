@@ -209,9 +209,9 @@ function WorkTile({
       </TiltCard>
 
       {/* Body */}
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-1.5 text-center sm:text-left items-center sm:items-start">
         <h3
-          className={`font-bold tracking-tight truncate transition-colors duration-150 group-hover:text-blue-500 flex items-center justify-between ${
+          className={`font-bold tracking-tight truncate transition-colors duration-150 group-hover:text-blue-500 flex items-center justify-center sm:justify-between w-full ${
             isLg ? "text-[20px] sm:text-[22px]" : "text-[16px]"
           }`}
           style={{ color: "var(--fg)" }}
@@ -219,7 +219,7 @@ function WorkTile({
           <span>{title}</span>
           <ArrowUpRight
             size={isLg ? 19 : 16}
-            className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all text-blue-500 shrink-0"
+            className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all text-blue-500 shrink-0 hidden sm:inline"
           />
         </h3>
         <p
@@ -239,10 +239,10 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
+      className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-0 sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
     >
       {/* Header */}
-      <div className="mb-6 sm:mb-14">
+      <div className="mb-6 sm:mb-14 text-center sm:text-left">
         <h1
           className="text-[2rem] sm:text-[3.2rem] md:text-[3.6rem] font-bold tracking-tight"
           style={{ color: "var(--fg)" }}
@@ -260,12 +260,14 @@ export default function WorkSection() {
 
       {/* Archive */}
       <div className="mt-12 sm:mt-24">
-        <h3
-          className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase mb-4 sm:mb-8"
-          style={{ color: "var(--fg-muted)" }}
-        >
-          Archive
-        </h3>
+        <div className="text-center sm:text-left">
+          <h3
+            className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase mb-4 sm:mb-8"
+            style={{ color: "var(--fg-muted)" }}
+          >
+            Archive
+          </h3>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3.5 sm:gap-x-6 gap-y-7 sm:gap-y-12">
           {WORK_ARCHIVE.map((item) => (
             <WorkTile key={item.slug} {...item} size="sm" />
