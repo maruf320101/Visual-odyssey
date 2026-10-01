@@ -242,7 +242,7 @@ export default function WorkSection() {
       className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-0 sm:pt-[50px] pb-12 sm:pb-32 scroll-mt-[45px] max-w-[1450px]"
     >
       {/* Header */}
-      <div className="mb-6 sm:mb-14 text-center sm:text-left">
+      <div className="mb-6 sm:mb-14 text-left">
         <h1
           className="text-[2rem] sm:text-[3.2rem] md:text-[3.6rem] font-bold tracking-tight"
           style={{ color: "var(--fg)" }}
@@ -260,7 +260,7 @@ export default function WorkSection() {
 
       {/* Archive */}
       <div className="mt-12 sm:mt-24">
-        <div className="text-center sm:text-left">
+        <div className="text-left">
           <h3
             className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase mb-4 sm:mb-8"
             style={{ color: "var(--fg-muted)" }}

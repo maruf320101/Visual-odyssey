@@ -38,16 +38,7 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* Side project link */}
-        <a
-          href={FOOTER.sideProject.href}
-          target="_blank"
-          rel="noopener"
-          className="transition-colors duration-150 hover:text-blue-500"
-          style={{ color: "var(--fg-muted)" }}
-        >
-          {FOOTER.sideProject.label}
-        </a>
+
 
         {/* Copyright */}
         <span style={{ color: "var(--fg-muted)" }}>
