@@ -39,7 +39,7 @@ function CardVisualPreview({ type, color, title }: { type?: string; color: strin
         <img
           src={item.image}
           alt={item.alt}
-          className="w-full h-full object-cover object-center select-none"
+          className="w-full h-full object-contain sm:object-cover object-center select-none"
           loading="lazy"
         />
       </div>
@@ -139,10 +139,8 @@ function WorkTile({
         <div
           className={`relative overflow-hidden ${
             isLg ? "rounded-2xl" : "rounded-xl"
-          } flex flex-col items-center justify-center gap-3 ${
-            isLg
-              ? "min-h-[300px] sm:min-h-[350px] md:min-h-[380px] aspect-[16/10.5]"
-              : "min-h-[130px] sm:min-h-[160px] md:min-h-[195px] aspect-[16/10]"
+          } flex flex-col items-center justify-center gap-3 aspect-[16/10] ${
+            isLg ? "sm:min-h-[350px] md:min-h-[380px]" : "sm:min-h-[160px] md:min-h-[195px]"
           }`}
           style={{
             background: "linear-gradient(135deg, color-mix(in srgb, #3b82f6 8%, var(--card-bg)), color-mix(in srgb, #06b6d4 4%, var(--card-bg)))",
@@ -165,22 +163,19 @@ function WorkTile({
             </p>
           </div>
         </div>
-        <div className="h-8" />
       </div>
     );
   }
 
   const cardContent = (
-    <article className="group flex flex-col gap-4 cursor-pointer">
+    <article className="group flex flex-col gap-3.5 sm:gap-4 cursor-pointer">
       {/* Media card with tilt */}
       <TiltCard isLg={isLg}>
         <div
           className={`relative overflow-hidden ${
             isLg ? "rounded-2xl" : "rounded-xl"
-          } border border-neutral-200/90 dark:border-neutral-800 transition-shadow duration-300 group-hover:shadow-xl ${
-            isLg
-              ? "min-h-[300px] sm:min-h-[350px] md:min-h-[380px] aspect-[16/10.5]"
-              : "min-h-[130px] sm:min-h-[160px] md:min-h-[195px] aspect-[16/10]"
+          } border border-neutral-200/90 dark:border-neutral-800 transition-shadow duration-300 group-hover:shadow-xl aspect-[16/10] ${
+            isLg ? "sm:min-h-[350px] md:min-h-[380px]" : "sm:min-h-[160px] md:min-h-[195px]"
           }`}
           style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.06)" }}
         >
@@ -264,14 +259,14 @@ export default function WorkSection() {
       </div>
 
       {/* Archive */}
-      <div className="mt-20 sm:mt-24">
+      <div className="mt-16 sm:mt-24">
         <h3
-          className="text-[13px] font-bold tracking-[0.14em] uppercase mb-8"
+          className="text-[13px] font-bold tracking-[0.14em] uppercase mb-6 sm:mb-8"
           style={{ color: "var(--fg-muted)" }}
         >
           Archive
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12">
           {WORK_ARCHIVE.map((item) => (
             <WorkTile key={item.slug} {...item} size="sm" />
           ))}
