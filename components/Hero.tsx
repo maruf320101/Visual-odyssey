@@ -33,7 +33,7 @@ function LaptopMockup() {
 
   return (
     <div
-      className="relative w-full max-w-[330px] sm:max-w-[540px] mx-auto cursor-pointer select-none"
+      className="relative w-full max-w-[295px] sm:max-w-[490px] mx-auto cursor-pointer select-none"
       style={{ perspective: 1200 }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -60,7 +60,7 @@ function LaptopMockup() {
             <span className="w-2.5 h-2.5 rounded-full" style={{ background: "#febc2e" }} />
             <span className="w-2.5 h-2.5 rounded-full" style={{ background: "#28c840" }} />
             <div className="ml-3 flex-1 rounded-md px-3 py-1 text-[10px] font-medium" style={{ background: "#0d1117", color: "#8b949e", border: "1px solid #30363d" }}>
-              anisurmaruf.dev
+              visualodyssey.dev
             </div>
           </div>
 
