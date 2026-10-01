@@ -1,0 +1,193 @@
+/* ─── Fonts (must come before all other rules) ───────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap');
+
+/* ─── Tailwind v4 ────────────────────────────────────────────── */
+@import "tailwindcss";
+
+/* ─── Dark mode: data-theme attribute ───────────────────────── */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ─── Theme tokens ───────────────────────────────────────────── */
+@theme {
+  --font-sans: "Figtree", "Inter", system-ui, sans-serif;
+
+  --color-primary: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-accent-blue: #3b82f6;
+  --color-accent-cyan: #06b6d4;
+
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-card-dark: 0 2px 8px rgba(0,0,0,0.20);
+
+  --max-width-3xl: 860px;
+  --max-width-4xl: 960px;
+}
+
+/* ─── CSS Custom Properties (light / dark) ───────────────────── */
+:root,
+[data-theme="light"] {
+  --content-width: 1450px;
+  --bg: #ffffff;
+  --bg-subtle: #f8fafc;
+  --fg: #0f172a;
+  --fg-muted: #64748b;
+  --border: #e2e8f0;
+  --card-bg: #ffffff;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --avatar-glow: rgba(59, 130, 246, 0.25);
+  --nav-bg: rgba(255, 255, 255, 0.88);
+  --nav-border: rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="dark"] {
+  --bg: #0b0f17;
+  --bg-subtle: #111827;
+  --fg: #f1f5f9;
+  --fg-muted: #94a3b8;
+  --border: #1e293b;
+  --card-bg: #111827;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.40);
+  --avatar-glow: rgba(59, 130, 246, 0.35);
+  --nav-bg: rgba(15, 20, 35, 0.88);
+  --nav-border: rgba(255, 255, 255, 0.12);
+}
+
+/* ─── Base ───────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: "Figtree", "Inter", system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Avatar glow ────────────────────────────────────────────── */
+.avatar-glow {
+  box-shadow: 0 0 0 3px var(--avatar-glow), 0 0 0 6px rgba(59, 130, 246, 0.10);
+  transition: box-shadow 0.3s ease;
+}
+
+/* ─── Gradient text ──────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* ─── Nav backdrop blur ──────────────────────────────────────── */
+.nav-blur {
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* ─── Card ───────────────────────────────────────────────────── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--card-shadow);
+  border-radius: 1rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ─── Dot Loading Progress Animation ─────────────────────────── */
+@keyframes dotProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* ─── Print Styles for 2-Page Resume PDF ─────────────────────── */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  
+  html, body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    min-height: auto !important;
+  }
+
+  .resume-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .resume-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10mm 14mm !important;
+    width: 210mm !important;
+    max-width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    box-sizing: border-box !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+  }
+
+  .resume-sheet:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+}
+
