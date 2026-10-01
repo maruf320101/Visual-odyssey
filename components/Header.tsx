@@ -22,7 +22,7 @@ function LogoMark() {
           </linearGradient>
         </defs>
       </svg>
-      <span className="text-[21px] sm:text-[22px] font-black tracking-[0.08em] uppercase" style={{ color: "var(--fg)" }}>
+      <span className="text-[15px] sm:text-[21px] md:text-[22px] font-black tracking-[0.06em] sm:tracking-[0.08em] uppercase" style={{ color: "var(--fg)" }}>
         Visual<span className="font-light" style={{ color: "var(--fg-muted)" }}>Odyssey</span>
       </span>
     </Link>
