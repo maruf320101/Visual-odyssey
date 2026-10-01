@@ -9,7 +9,7 @@ export default function AISection() {
   return (
     <section id="ai" className="w-full mx-auto px-4 sm:px-6 py-20 sm:py-28" style={{ maxWidth: "var(--content-width, 1450px)" }}>
       <motion.div
-        className="rounded-3xl p-10 sm:p-16 relative overflow-hidden"
+        className="rounded-3xl p-6 sm:p-16 relative overflow-hidden"
         style={{ background: "var(--nav-bg)", border: "1px solid var(--border)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", boxShadow: "var(--card-shadow)" }}
         initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.7, ease: EASE }}
