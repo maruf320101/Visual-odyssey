@@ -33,7 +33,7 @@ function LaptopMockup() {
 
   return (
     <div
-      className="relative w-full max-w-[295px] sm:max-w-[490px] mx-auto cursor-pointer select-none"
+      className="relative w-full max-w-[295px] sm:max-w-[500px] mx-auto lg:mr-0 lg:ml-auto cursor-pointer select-none"
       style={{ perspective: 1200 }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -174,11 +174,11 @@ export default function Hero() {
       aria-labelledby="hero-heading"
     >
       {/* ── Main grid ── */}
-      <div className="w-full mx-auto max-w-[1260px] mt-2 mb-2 sm:my-auto py-1 sm:py-0">
+      <div className="w-full mx-auto max-w-[1450px] mt-2 mb-2 sm:my-auto py-1 sm:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
           {/* LEFT — Text */}
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left order-1 max-w-[540px]">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left order-1 max-w-[540px] xl:max-w-[580px]">
 
             {/* H1 */}
             <motion.h1
