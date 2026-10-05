@@ -16,19 +16,19 @@ function CardVisualPreview({ type, color, title }: { type?: string; color: strin
     },
     nextadmin: {
       image: "/projects/nextadmin_card.png",
-      alt: "NextAdmin — Enterprise SaaS Dashboard",
+      alt: "NextAdmin: Enterprise SaaS Dashboard",
     },
     midday: {
       image: "/projects/midday_card.png",
-      alt: "Midday — Financial OS & Invoicing",
+      alt: "Midday: Financial OS & Invoicing",
     },
     dub: {
       image: "/projects/dub_card.png",
-      alt: "Dub.co — Marketing Analytics Platform",
+      alt: "Dub.co: Marketing Analytics Platform",
     },
     cal: {
       image: "/projects/cal_card.png",
-      alt: "Cal.com — Scheduling Infrastructure",
+      alt: "Cal.com: Scheduling Infrastructure",
     },
   };
 
@@ -132,7 +132,7 @@ function WorkTile({
 }) {
   const isLg = size === "lg";
 
-  // Card 6: Empty slot — styled visibly as "Coming Soon"
+  // Card 6: Empty slot: styled visibly as "Coming Soon"
   if (isEmpty) {
     return (
       <div className="w-full flex flex-col gap-4 select-none" aria-hidden="true">
@@ -251,7 +251,7 @@ export default function WorkSection() {
         </h1>
       </div>
 
-      {/* Featured — 6 cards in 2 columns (3 rows) */}
+      {/* Featured: 6 cards in 2 columns (3 rows) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 lg:gap-14">
         {PROJECTS.map((item) => (
           <WorkTile key={item.id} {...item} size="lg" />

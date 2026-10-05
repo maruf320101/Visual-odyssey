@@ -103,13 +103,13 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
 
-  // ─── Project 2: NextAdmin — Enterprise SaaS & Analytics Dashboard ───
+  // ─── Project 2: NextAdmin: Enterprise SaaS & Analytics Dashboard ───
   {
     id: "next-admin",
     slug: "next-admin",
     index: "02",
     company: "NextAdmin",
-    title: "NextAdmin — Enterprise SaaS Dashboard",
+    title: "NextAdmin: Enterprise SaaS Dashboard",
     blurb: "Full-stack SaaS analytics dashboard with interactive charts, financial KPIs, user tables, and dark mode.",
     heroSubtitle: "Next.js 15, TypeScript, Tailwind CSS, ApexCharts, real-time metrics, and customizable admin portal layouts.",
     liveUrl: "https://demo.nextadmin.co",
@@ -161,13 +161,13 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
 
-  // ─── Project 3: Midday — Modern Financial OS & Invoicing ───
+  // ─── Project 3: Midday: Modern Financial OS & Invoicing ───
   {
     id: "midday-finance",
     slug: "midday-finance",
     index: "03",
     company: "Midday.ai",
-    title: "Midday — Financial OS & Invoicing",
+    title: "Midday: Financial OS & Invoicing",
     blurb: "All-in-one business finance engine with automated invoicing, profit & loss analytics, and glassmorphism UI.",
     heroSubtitle: "Next.js, Supabase, Tailwind CSS, Server Actions, financial APIs, and ultra-smooth financial micro-interactions.",
     liveUrl: "https://midday.ai",
@@ -219,13 +219,13 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
 
-  // ─── Project 4: Dub.co — Marketing Analytics & Link Infrastructure ───
+  // ─── Project 4: Dub.co: Marketing Analytics & Link Infrastructure ───
   {
     id: "dub-analytics",
     slug: "dub-analytics",
     index: "04",
     company: "Dub.co",
-    title: "Dub.co — Marketing Analytics Platform",
+    title: "Dub.co: Marketing Analytics Platform",
     blurb: "Real-time link management platform with geographic conversion tracking, custom domains, and QR engine.",
     heroSubtitle: "Next.js, Upstash Redis, Framer Motion, geographic map tracking, and sub-millisecond click analytics.",
     liveUrl: "https://dub.co",
@@ -277,13 +277,13 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
 
-  // ─── Project 5: Cal.com — Interactive Scheduling & Booking Platform ───
+  // ─── Project 5: Cal.com: Interactive Scheduling & Booking Platform ───
   {
     id: "cal-booking",
     slug: "cal-booking",
     index: "05",
     company: "Cal.com",
-    title: "Cal.com — Scheduling Infrastructure",
+    title: "Cal.com: Scheduling Infrastructure",
     blurb: "Complex interactive appointment booking platform with automatic timezone routing and calendar synchronization.",
     heroSubtitle: "React, Next.js, Framer Motion, fluid appointment reservation, and multi-tenant calendar engine.",
     liveUrl: "https://cal.com",
@@ -359,11 +359,11 @@ export const ARCHIVE_PROJECTS: ProjectItem[] = [
     company: "LI.FI Protocol",
     title: "LI.FI AI Design System",
     blurb: "Token-first system for a cross-chain protocol, expanded with AI.",
-    heroSubtitle: "Token-first multi-chain design system engineered with design tokens, Figma variables, responsive components, and automated code handoff.",
+    heroSubtitle: "Token-first multi-chain design system engineered with semantic tokens, responsive components, and automated code handoff.",
     liveUrl: "https://li.fi",
     color: "#805AD5",
     hue: 270,
-    tags: ["Design System", "Tokens", "Figma", "Web3", "AI Workflow"],
+    tags: ["Design System", "Tokens", "Modern Web", "Web3", "AI Workflow"],
     iconGradient: "linear-gradient(135deg, #7928CA 0%, #FF0080 100%)",
     sections: [
       {
@@ -378,7 +378,7 @@ export const ARCHIVE_PROJECTS: ProjectItem[] = [
         number: "01",
         title: "Tokens & Foundations",
         subtitle: "Design Tokens Generated from Code Tokens",
-        description: "Semantic design tokens synchronizing color palettes, typography scales, spacing units, and radius tokens bi-directionally between Figma variables and CSS tokens.",
+        description: "Semantic design tokens synchronizing color palettes, typography scales, spacing units, and radius tokens bi-directionally between design systems and CSS tokens.",
         visualType: "tokens-card",
       },
       {
@@ -451,7 +451,7 @@ export const ARCHIVE_PROJECTS: ProjectItem[] = [
         id: "hero",
         number: "00",
         title: "Overview",
-        description: "Jumper is LI.FI's consumer-facing cross-chain liquidity aggregator. The brand was created from zero — establishing an energetic, trustworthy aesthetic that simplifies complex bridge operations.",
+        description: "Jumper is LI.FI's consumer-facing cross-chain liquidity aggregator. The brand was created from zero, establishing an energetic, trustworthy aesthetic that simplifies complex bridge operations.",
         visualType: "laptop-hero",
       },
       {
@@ -581,7 +581,7 @@ export const ARCHIVE_PROJECTS: ProjectItem[] = [
         number: "01",
         title: "Pro Viewfinder UX",
         subtitle: "Independent Focus & Exposure Reticles",
-        description: "Allowed photographers to lock focus on the subject with a 2-finger tap while adjusting exposure on backlighting independently — an industry first on iOS.",
+        description: "Allowed photographers to lock focus on the subject with a 2-finger tap while adjusting exposure on backlighting independently, an industry first on iOS.",
         visualType: "mobile-showcase",
       },
       {

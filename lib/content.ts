@@ -14,19 +14,19 @@ export const HERO = {
 
 export const AI_SECTION = {
   eyebrow: "Method",
-  title: "Co-piloting with AI to ship at 10x speed.",
+  title: "Building modern websites with AI at 10x speed.",
   points: [
     {
-      title: "Natural prompt-to-code fluency",
-      body: "I work with AI models effortlessly—translating complex product requirements into clean architecture, robust logic, and interactive UI in real time.",
+      title: "Natural prompt to code fluency",
+      body: "I collaborate with AI models effortlessly, turning complex vision into clean architecture, robust APIs, and modern responsive websites in real time.",
     },
     {
-      title: "Figma to live Next.js at warp speed",
-      body: "I pair design systems with agentic workflows to turn mockups into production-ready code, eliminating weeks of boilerplate without losing precision.",
+      title: "Concept to live web apps at warp speed",
+      body: "I leverage agentic workflows to build full-stack websites from idea to deployment, eliminating weeks of repetitive boilerplate while ensuring modern web standards.",
     },
     {
-      title: "Human taste sets the standard",
-      body: "AI delivers unprecedented speed, but human intuition defines the soul. I direct the vision, critique details, and polish micro-interactions to perfection.",
+      title: "Human vision shapes the future",
+      body: "AI brings unprecedented speed and intelligence, while human creativity defines the purpose. I direct the architecture, engineer the details, and craft digital experiences built for tomorrow.",
     },
   ],
 };
@@ -73,22 +73,22 @@ export const EXPERIENCE = [
     period: "2023 – Present",
     role: "Founder & Content Strategist",
     company: "Design w Anis (YouTube)",
-    logos: ["youtube", "figma"],
+    logos: ["youtube", "code"],
     bullets: [
-      "Founded and scaled an online design education platform focused on UI/UX, interaction design, and modern Figma workflows for a growing digital audience.",
-      "Formulated comprehensive content strategies, analyzed channel audience metrics, and led active community engagement to resolve complex UI/UX and technical design challenges.",
-      "Architected structural roadmaps and curricula for design bootcamps, producing reusable design systems, high-fidelity wireframe kits, and digital assets.",
+      "Founded and scaled an online educational platform focused on modern web workflows, visual content, and creative technologies for a growing digital audience.",
+      "Formulated comprehensive content strategies, analyzed channel audience metrics, and led active community engagement to resolve complex web engineering and creative challenges.",
+      "Architected structural roadmaps and curricula for technical bootcamps, producing reusable design systems, component kits, and digital web assets.",
     ],
   },
   {
-    logoType: "uiux",
+    logoType: "code",
     period: "2023 – Present",
-    role: "Freelance UI/UX Team Lead & Frontend Developer",
+    role: "Freelance AI Web Developer & Frontend Engineer",
     company: "Freelance & University IDP",
-    logos: ["uiux", "code"],
+    logos: ["code", "ai"],
     bullets: [
-      "Led a remote team of designers across diverse freelance UI/UX projects, managing end-to-end client communications, user research, wireframing, and final design delivery.",
-      "Served as the core UI/UX and Frontend Developer for the University Interdisciplinary Project (IDP), successfully bridging the gap between Figma design systems and functional production code.",
+      "Led a remote team across diverse web development projects, managing end-to-end client communications, technical specifications, and final web delivery.",
+      "Served as the core Frontend Developer for the University Interdisciplinary Project (IDP), successfully turning conceptual architectures into functional production code.",
       "Engineered clean, responsive, and accessible user interfaces utilizing modern frontend technologies (HTML5, CSS3, JavaScript, Tailwind CSS).",
     ],
   },

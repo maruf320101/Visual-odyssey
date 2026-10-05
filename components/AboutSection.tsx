@@ -58,7 +58,7 @@ function Lightbox({
       transition={{ duration: 0.25 }}
       onClick={onClose}
     >
-      {/* Close button — rounded-xl box, larger */}
+      {/* Close button: rounded-xl box */}
       <button
         onClick={onClose}
         className={`absolute top-5 right-5 sm:top-7 sm:right-7 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-sm ${
@@ -71,7 +71,7 @@ function Lightbox({
         <X size={22} strokeWidth={2.2} />
       </button>
 
-      {/* Prev button — clean large chevron, NO circle background */}
+      {/* Prev button */}
       <button
         onClick={(e) => { e.stopPropagation(); prev(); }}
         className={`absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-20 transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer p-2 flex items-center justify-center ${
@@ -84,7 +84,7 @@ function Lightbox({
         <ChevronLeft size={44} strokeWidth={1.8} />
       </button>
 
-      {/* Next button — clean large chevron, NO circle background */}
+      {/* Next button */}
       <button
         onClick={(e) => { e.stopPropagation(); next(); }}
         className={`absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-20 transition-all duration-200 hover:scale-115 active:scale-90 cursor-pointer p-2 flex items-center justify-center ${

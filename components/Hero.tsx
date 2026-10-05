@@ -16,7 +16,7 @@ function fadeUp(delay: number) {
 
 
 
-/* ─── Laptop Mockup — 3D tilt + colorful screen ─────────────── */
+/* ─── Laptop Mockup: 3D tilt + colorful screen ─────────────── */
 function LaptopMockup() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -177,7 +177,7 @@ export default function Hero() {
       <div className="w-full mx-auto max-w-[1450px] mt-2 mb-2 sm:my-auto py-1 sm:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-center">
 
-          {/* LEFT — Text */}
+          {/* LEFT: Text */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left order-1 max-w-[540px] xl:max-w-[580px]">
 
             {/* H1 */}
@@ -187,7 +187,7 @@ export default function Hero() {
               style={{ color: "var(--fg)" }}
               {...fadeUp(0.2)}
             >
-              AI Product Builder &{" "}
+              AI Website Builder &{" "}
               <span className="gradient-text">Visual Storyteller</span>
             </motion.h1>
 
@@ -199,8 +199,7 @@ export default function Hero() {
             >
               I&apos;m{" "}
               <strong style={{ color: "var(--fg)" }}>Anisur Rahaman Maruf.</strong>{" "}
-              I build intelligent AI-powered products, craft intuitive interfaces,
-              and document the creative journey through visual stories.
+              I build modern websites and web applications using AI, shaping the digital future with speed, intelligence, and creative vision.
             </motion.p>
 
             {/* Buttons */}
@@ -232,7 +231,7 @@ export default function Hero() {
 
           </div>
 
-          {/* RIGHT — Laptop */}
+          {/* RIGHT: Laptop */}
           <motion.div
             className="flex items-center justify-center order-2 w-full"
             initial={{ opacity: 0, x: 40 }}

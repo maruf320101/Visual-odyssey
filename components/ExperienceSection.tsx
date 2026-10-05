@@ -21,21 +21,17 @@ function ExperienceAvatar({ type }: { type: string }) {
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>
           </div>
-          {/* Overlapping Sub-Badge: Figma */}
+          {/* Overlapping Sub-Badge: Creative */}
           <div
-            className="absolute -bottom-1 -right-1 w-[22px] h-[22px] sm:w-[24px] sm:h-[24px] rounded-full flex items-center justify-center shadow-md"
+            className="absolute -bottom-1 -right-1 w-[22px] h-[22px] sm:w-[24px] sm:h-[24px] rounded-full flex items-center justify-center shadow-md text-amber-400"
             style={{
               background: "#18181B",
               border: "2.5px solid var(--bg)",
             }}
-            title="Figma UI/UX"
+            title="Visual Storytelling"
           >
-            <svg className="w-3 h-3 fill-none stroke-purple-400" viewBox="0 0 24 24" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
-              <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
-              <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
-              <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
-              <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+            <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/>
             </svg>
           </div>
         </div>
@@ -43,13 +39,14 @@ function ExperienceAvatar({ type }: { type: string }) {
 
     case "freelance":
     case "uiux":
+    case "web":
       return (
         <div className="relative shrink-0 mt-0.5 sm:mt-1">
-          {/* Main Disc: UI/UX Frame */}
+          {/* Main Disc: Modern Web Architecture */}
           <div
             className="w-[50px] h-[50px] sm:w-[56px] sm:h-[56px] rounded-full flex items-center justify-center text-white shadow-sm ring-1 ring-black/5 dark:ring-white/10"
             style={{ background: "linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)" }}
-            title="UI/UX Design Systems"
+            title="Modern Web Systems"
           >
             <svg className="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="3" width="18" height="18" rx="2" />

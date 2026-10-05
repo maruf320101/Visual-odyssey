@@ -60,18 +60,18 @@ export default function ResumePage() {
                 <h1 className="text-[24px] sm:text-[28px] font-bold tracking-tight text-neutral-900 leading-snug">
                   Anisur Rahaman Maruf{" "}
                   <span className="text-neutral-400 font-light">·</span>{" "}
-                  <span className="text-neutral-600 font-normal">UI/UX Designer, Frontend Developer &amp; AI Researcher</span>
+                  <span className="text-neutral-600 font-normal">AI Website Builder, Web Engineer &amp; Visual Storyteller</span>
                 </h1>
                 <p className="mt-2.5 text-[14px] leading-relaxed text-neutral-600 max-w-[720px]">
-                  Computer Science and Engineering undergraduate at Green University of Bangladesh. Founder &amp; Content Strategist of Design w Anis. Dedicated to User-Centered Design (UCD), high-fidelity Figma prototyping, modern frontend web engineering, and medical deep learning computer vision research.
+                  Computer Science and Engineering undergraduate at Green University of Bangladesh. Founder &amp; Visual Storyteller at Design w Anis. Dedicated to modern web architecture, AI-powered web development, rapid digital creation, and medical deep learning computer vision research.
                 </p>
 
                 {/* Skill tag pills from authentic PDF */}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {[
-                    "UI/UX Design",
-                    "Figma Prototyping",
-                    "User-Centered Design (UCD)",
+                    "AI-Driven Web Development",
+                    "Modern Web Architecture",
+                    "Visual Storytelling",
                     "HTML5 / CSS3 / JS",
                     "React / Next.js",
                     "Tailwind CSS",
@@ -116,19 +116,19 @@ export default function ResumePage() {
                       </p>
                       <ul className="list-disc list-outside ml-4 space-y-1.5 text-[13.5px] leading-relaxed text-neutral-600">
                         <li>
-                          Managed and scaled an online educational platform focused on UI/UX and graphic design by producing high-quality tutorial series and workflows.
+                          Managed and scaled an online educational platform focused on modern web design and visual tech by producing high-quality tutorial series and workflows.
                         </li>
                         <li>
-                          Formulated comprehensive content strategies, analyzed channel audience metrics, and led community engagement to resolve complex UI/UX and technical design challenges.
+                          Formulated comprehensive content strategies, analyzed channel audience metrics, and led community engagement to resolve complex frontend and modern web challenges.
                         </li>
                         <li>
-                          Designed curriculum and structural roadmaps for comprehensive design bootcamps, high-fidelity wireframe kits, and digital UI assets.
+                          Designed curriculum and structural roadmaps for modern web bootcamps, architectural patterns, and digital web assets.
                         </li>
                       </ul>
                     </div>
                   </div>
 
-                  {/* Job 2: Freelance UI/UX & IDP */}
+                  {/* Job 2: Freelance Web & IDP */}
                   <div className="flex items-start gap-3.5">
                     <div
                       className="w-10 h-10 rounded-full flex items-center justify-center text-white shrink-0 mt-0.5 shadow-sm"
@@ -142,17 +142,17 @@ export default function ResumePage() {
                     </div>
                     <div>
                       <h3 className="text-[17px] font-bold text-neutral-900 leading-snug">
-                        Freelance &amp; University IDP Project <span className="font-normal text-neutral-400">·</span> Freelance UI/UX Team Lead &amp; Frontend Developer
+                        Freelance &amp; University IDP Project <span className="font-normal text-neutral-400">·</span> Lead Web Builder &amp; Frontend Developer
                       </h3>
                       <p className="text-[12.5px] text-neutral-500 mt-0.5 mb-2">
                         Dhaka, Bangladesh · Jan 2023 – Present
                       </p>
                       <ul className="list-disc list-outside ml-4 space-y-1.5 text-[13.5px] leading-relaxed text-neutral-600">
                         <li>
-                          Led a remote team of designers on freelance UI/UX projects, managing end-to-end client communications, user research, wireframing, and final delivery.
+                          Led a remote team on freelance web projects, managing end-to-end client communications, technical scoping, responsive layouts, and final delivery.
                         </li>
                         <li>
-                          Served as the core UI/UX and Frontend Developer for the university Interdisciplinary Project (IDP), successfully bridging the gap between Figma design systems and functional code.
+                          Served as the lead web developer for the university Interdisciplinary Project (IDP), successfully delivering scalable web interfaces and high-performance functional code.
                         </li>
                         <li>
                           Collaborated with cross-functional team members to implement clean, responsive, and accessible user interfaces using modern frontend technologies.
@@ -277,7 +277,7 @@ export default function ResumePage() {
                     <h4 className="font-bold text-neutral-900">Web Development &amp; Engineering</h4>
                     <p className="text-[11.5px] text-neutral-500 mb-1">Personal &amp; Academic · Jan 2025 – Mar 2026</p>
                     <p className="text-neutral-600 leading-relaxed text-[12.5px]">
-                      Engineered responsive web applications translating Figma wireframes into pixel-perfect production code with HTML5, CSS3, JavaScript, and Git version control.
+                      Engineered responsive web applications with modern architecture, translating visual concepts into pixel-perfect production code with HTML5, CSS3, JavaScript, Next.js, and Git.
                     </p>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ export default function ResumePage() {
                 </p>
                 <div className="text-[12px] text-neutral-600 space-y-1.5 leading-relaxed">
                   <p>
-                    <strong className="text-neutral-900">Design &amp; Prototyping:</strong> UI/UX Design, High-Fidelity Wireframing, Interactive Prototyping, User-Centered Design (UCD), Figma, Design Systems.
+                    <strong className="text-neutral-900">AI &amp; Web Building:</strong> AI-Powered Web Development, Modern Web Architecture, Visual Storytelling, Responsive Systems, Performance Optimization.
                   </p>
                   <p>
                     <strong className="text-neutral-900">Web &amp; Databases:</strong> HTML5, CSS3, JavaScript, MySQL, MySQL Workbench, React, Next.js, Tailwind CSS, Responsive Web.

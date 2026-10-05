@@ -895,7 +895,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             >
               Work
             </Link>
-            {/* Close Button (✕) — Returns back to Selected Work grid */}
+            {/* Close Button (✕): Returns back to Selected Work grid */}
             <Link
               href="/#work"
               className="w-9 h-9 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center text-neutral-600 hover:text-neutral-900 transition-colors ml-2"

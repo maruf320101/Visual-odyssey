@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Visual Odyssey · Anisur Rahaman Maruf",
   description:
-    "Visual Odyssey — Portfolio of Anisur Rahaman Maruf, AI Product Builder & Visual Storyteller.",
+    "Visual Odyssey · Portfolio of Anisur Rahaman Maruf, AI Website Builder & Visual Storyteller.",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Visual Odyssey · Anisur Rahaman Maruf",
     description:
-      "Visual Odyssey — Portfolio of Anisur Rahaman Maruf, AI Product Builder & Visual Storyteller.",
+      "Visual Odyssey · Portfolio of Anisur Rahaman Maruf, AI Website Builder & Visual Storyteller.",
     type: "website",
   },
   twitter: {

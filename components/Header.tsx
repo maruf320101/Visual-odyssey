@@ -76,7 +76,7 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 flex justify-center px-2.5 sm:px-6 lg:px-8 pt-3 sm:pt-5">
       <div className="w-full max-w-[1450px] flex items-center justify-between gap-2 sm:gap-4">
-        {/* Main Nav Pill — Refined, sleek, luxurious */}
+        {/* Main Nav Pill: Refined, sleek, luxurious */}
         <nav
           className="flex-1 min-w-0 flex items-center justify-between px-3 sm:px-8 h-[46px] sm:h-[74px] rounded-[50px] transition-all duration-150"
           style={{
