@@ -187,9 +187,8 @@ export default function Hero() {
               style={{ color: "var(--fg)" }}
               {...fadeUp(0.2)}
             >
-              UI/UX Designer &{" "}
-              <span className="gradient-text">Frontend</span>{" "}
-              Developer
+              AI Product Builder &{" "}
+              <span className="gradient-text">Visual Storyteller</span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -200,8 +199,8 @@ export default function Hero() {
             >
               I&apos;m{" "}
               <strong style={{ color: "var(--fg)" }}>Anisur Rahaman Maruf.</strong>{" "}
-              I design high-fidelity interfaces in Figma, build them in
-              Next.js, and apply AI to accelerate every step.
+              I build intelligent AI-powered products, craft intuitive interfaces,
+              and document the creative journey through visual stories.
             </motion.p>
 
             {/* Buttons */}
