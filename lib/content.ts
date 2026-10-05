@@ -14,19 +14,19 @@ export const HERO = {
 
 export const AI_SECTION = {
   eyebrow: "Method",
-  title: "AI as a partner",
+  title: "Co-piloting with AI to ship at 10x speed.",
   points: [
     {
-      title: "Design systems become harnesses",
-      body: "Tokens, components and rules guide modern UI models and workflows.",
+      title: "Natural prompt-to-code fluency",
+      body: "I work with AI models effortlessly—translating complex product requirements into clean architecture, robust logic, and interactive UI in real time.",
     },
     {
-      title: "Mockups become products",
-      body: "I take a product from Figma wireframes to working, production-ready code.",
+      title: "Figma to live Next.js at warp speed",
+      body: "I pair design systems with agentic workflows to turn mockups into production-ready code, eliminating weeks of boilerplate without losing precision.",
     },
     {
-      title: "Taste stays human",
-      body: "AI accelerates development; I direct, critique, test and decide.",
+      title: "Human taste sets the standard",
+      body: "AI delivers unprecedented speed, but human intuition defines the soul. I direct the vision, critique details, and polish micro-interactions to perfection.",
     },
   ],
 };

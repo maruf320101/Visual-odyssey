@@ -20,7 +20,7 @@ export default function AISection() {
         <p className="text-[12px] font-semibold tracking-[0.14em] uppercase mb-3 sm:mb-5" style={{ color: "var(--fg-muted)" }}>
           /{AI_SECTION.eyebrow.toLowerCase()}
         </p>
-        <h2 className="text-[1.85rem] sm:text-[2.6rem] md:text-[3rem] font-semibold tracking-tight leading-tight mb-8 sm:mb-16 max-w-[480px]"
+        <h2 className="text-[1.85rem] sm:text-[2.6rem] md:text-[3rem] font-semibold tracking-tight leading-tight mb-8 sm:mb-16 max-w-[620px]"
           style={{ color: "var(--fg)" }}>{AI_SECTION.title}</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
