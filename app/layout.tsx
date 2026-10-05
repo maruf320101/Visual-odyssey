@@ -12,6 +12,16 @@ export const metadata: Metadata = {
   title: "Visual Odyssey · Anisur Rahaman Maruf",
   description:
     "Visual Odyssey — Portfolio of Anisur Rahaman Maruf, UI/UX Designer & Frontend Developer.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "Visual Odyssey · Anisur Rahaman Maruf",
     description:
